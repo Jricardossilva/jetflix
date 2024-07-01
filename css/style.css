@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: black;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+
+}
+
+.logo{
+    flex: 20%;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.logo img{
+    max-width: 100%;
+}
+
+.logo1{
+    width: 200px;
+}
+
+.grupo-topo{
+    flex: 80%;
+
+}
+
+.select-idioma{
+    padding: 5px 15px;
+    float: right;
+    margin: 1%;
+    background: none;
+    color: white;
+}
+
+.btn-topo{
+    background: red;
+    padding: 5px 35px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    float: right;
+    margin: 1% 5% 0 1%;
+}
+
+header{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 8px solid #333333;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.miolo{
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.miolo h1{
+    color: white;
+    font-size: 4rem;
+    text-shadow: 1px 1px 5px black;
+    padding: 0;
+    margin:  0;
+}
+
+.miolo h2{
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px black;
+    padding: 10px;
+    margin: 0;
+}
+
+.miolo h3{
+    color: white;
+    font-weight: 400;
+}
+
+.input-container{
+    text-align: center;
+}
+
+.input-email{
+    width: 450px;
+    height: 58px;
+    padding: 30px 40px 20px 10px;
+    margin-right: 0;
+    margin-bottom: 2%;
+    border:none;
+}
+
+.btn-email{
+    background: red;
+    border: 1px solid red;
+    width: 200px;
+    color: white;
+    height: 60px;
+    font-size: 22px;
+    padding: 19px;
+    margin-left: 0;
+}
+
+section{
+    display: flex;
+    color: white;
+    border-bottom: 8px solid #333333;
+    margin-bottom: 2%;
+}
+
+section h2{
+    font-size: 3rem;
+
+}
+
+section h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+section img{
+    max-width: 100%;
+}
+
+.video{
+    width:415px;
+    height:280px;
+    position: relative;
+    right: -10%;
+    top:-349px;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+[class*="col-"]{
+    float: left;
+    padding: 35px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.pergunta{
+    width: 100%;
+    background: #333333;
+    padding: 15px 0px 15px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.resposta{
+    display: none;
+    width: 100%;
+    background: #333333;
+    padding: 15px 0px 15px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.icon{
+    float: right;
+    margin-right: 5%;
+}
+
+
+footer{
+    width: 100%;
+    color:gray;
+}
+
+footer a{
+    display: inline-block;
+    color:gray;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.no-padding{
+    padding:20px !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    [class*="col-"]{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .container{
+        width: 70%;
+        margin-left:15%;
+        margin-right: 15%;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+}
+
+
+@media only screen and (min-width: 768px) {}
+
+
+@media only screen and (min-width: 992px) {}
+
+
+@media only screen and (min-width: 1200px) {}
+
+
+
